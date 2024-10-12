@@ -1,0 +1,37 @@
+.gallery2{
+    background-color: #f9f9f9;
+    width: 100%; 
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.gallery img{
+    width: 300px;
+    height: 300px;
+    border-style: groove;
+    border-color: #00767c;
+    border-width: 10px;
+}
+
+.gallery video{
+    width: 300px;
+    height: 300px;
+    border-style: groove;
+    border-color: #00767c;
+    border-width: 10px;
+}
+
+.runs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 15px;
+    margin-left: 150px;
+    margin-top: 15px;
+}
+
+.description{
+    margin-left: 80px;
+    font-weight: bold;
+    font-size: 18px;
+}

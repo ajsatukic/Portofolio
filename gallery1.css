@@ -1,0 +1,48 @@
+/*Gallery 1*/
+.gallery1{
+    background-color: #f9f9f9;
+    width: 100%; 
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.conferences{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 15px;
+    margin-left: 50px;
+    margin-top: 15px;
+}
+.hover{
+    position: relative;
+}
+
+.conferences img{
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 400px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #bffcfb;
+}
+
+.hover:hover .overlay{
+    opacity: 1;
+    border-radius: 10px;
+}
+
+.text{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 130px;
+}

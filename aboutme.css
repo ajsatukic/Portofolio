@@ -1,0 +1,95 @@
+/*About Me*/
+.biography{
+    font-size: 20px;
+    background-color: #f9f9f9;
+    gap: 20px;
+    display: flex;
+}
+
+.section1 .section2{
+    padding: 20px;
+    flex: 1;
+}
+
+.section1 img{
+    width: 400px;
+    height: 400px;
+    margin-top: 30px;
+    margin-left: 50px;
+    border-radius: 10px;
+}
+
+.section1 ul{
+    margin-left: 80px;
+}
+
+/*https://css-generators.com/tooltip-speech-bubble/*/
+.section2 {
+    font-family: serif;
+    font-size: 18px;
+    max-width: 800px;
+    text-align: center;
+    margin-left: 90px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.section2 {
+    --a: 90deg;
+    --h: 70px; 
+    --p: 37%;  
+    --r: 30px; 
+    --b: 3px; 
+    --c1: #00767c;
+    --c2: #bffcfb;
+  
+    padding: 1em;
+    border-radius: var(--r)/min(var(--r),var(--p) - var(--h)*tan(var(--a)/2)) var(--r) var(--r) min(var(--r),100% - var(--p) - var(--h)*tan(var(--a)/2));
+    clip-path: polygon(0 0,100% 0,100% 100%,0 100%,
+      0 min(100%,var(--p) + var(--h)*tan(var(--a)/2)),
+      calc(-1*var(--h)) var(--p),
+      0 max(0%  ,var(--p) - var(--h)*tan(var(--a)/2)));
+    background: var(--c1);
+    border-image: conic-gradient(var(--c1) 0 0) fill 0/
+      max(0%,var(--p) - var(--h)*tan(var(--a)/2)) var(--r) max(0%,100% - var(--p) - var(--h)*tan(var(--a)/2)) 0/0 0 0 var(--h);
+    position: relative;
+}
+
+.section2:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    padding: var(--b);
+    border-radius: inherit;
+    clip-path: polygon(0 0,100% 0,100% 100%,0 100%,
+      var(--b) min(100% - var(--b),var(--p) + var(--h)*tan(var(--a)/2) - var(--b)*tan(45deg - var(--a)/4)),
+      calc(var(--b)/sin(var(--a)/2) - var(--h)) var(--p),
+      var(--b) max(       var(--b),var(--p) - var(--h)*tan(var(--a)/2) + var(--b)*tan(45deg - var(--a)/4)));
+    background: var(--c2) content-box;
+    border-image: conic-gradient(var(--c2) 0 0) fill 0/
+      max(var(--b),var(--p) - var(--h)*tan(var(--a)/2)) var(--r) max(var(--b),100% - var(--p) - var(--h)*tan(var(--a)/2)) 0/0 0 0 var(--h);
+}
+
+.section2 p{
+    text-align: justify;
+    font-size: 18px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.download-button {
+    margin-left: 150px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00767c; 
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.download-button:hover {
+    background-color: #bffcfb;
+    color: black;
+}

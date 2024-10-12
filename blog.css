@@ -1,0 +1,90 @@
+/*Blog*/
+.choose{
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#bffcfb;
+}
+
+.img-container{
+    text-align: center;
+    margin: 0 10px;
+}
+
+.choose img{
+    margin-top: 10px;
+    width: 400px;
+    height: 400px;
+}
+
+figcaption{
+    margin-top: 10px;
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: black;
+}
+.title{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #e8cccc;
+    padding: 1px;
+    
+}
+
+.article{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+}
+
+.content-article{
+    margin-top: 10px;
+    width: 280px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-right: 20px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.article-text{
+    max-width: 600px;
+    text-align: left;
+}
+
+.article-text img{
+    width: 500px;
+    height: 300px;
+    margin-left: 50px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 16px;
+    font-family: serif;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+table th {
+    background-color: #bffcfb;
+    color: black;
+    padding: 12px 15px;
+}
+
+table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+table tr:hover {
+    background-color: #f2f2f2;
+}
