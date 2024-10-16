@@ -1,7 +1,7 @@
-/*Blog*/
+
 .choose{
-    height: 700px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color:#bffcfb;
@@ -14,8 +14,8 @@
 
 .choose img{
     margin-top: 10px;
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
 }
 
 figcaption{
@@ -25,6 +25,8 @@ figcaption{
     color: black;
 }
 .title{
+    display: flex;
+    flex-direction: column;
     text-align: center;
     font-size: 25px;
     font-weight: bold;
@@ -35,8 +37,9 @@ figcaption{
 
 .article{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     width: 100%;
     margin: 0 auto;
     background-color: #f9f9f9;
@@ -47,10 +50,8 @@ figcaption{
     width: 280px;
     background-color: #f9f9f9;
     padding: 10px;
-    margin-right: 20px;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
 }
 
 .article-text{
@@ -59,16 +60,16 @@ figcaption{
 }
 
 .article-text img{
-    width: 500px;
-    height: 300px;
-    margin-left: 50px;
+    width: 100%;
+    height: auto;
+    margin-left: 0;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
     margin: 25px 0;
-    font-size: 16px;
+    font-size: 14px;
     font-family: serif;
     text-align: left;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
@@ -87,4 +88,10 @@ table td {
 
 table tr:hover {
     background-color: #f2f2f2;
+}
+
+@media (min-width: 768px) {
+    .choose {
+        flex-direction: row; 
+    }
 }

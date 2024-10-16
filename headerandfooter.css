@@ -11,6 +11,7 @@ header {
 }
 .navbar{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -132,4 +133,35 @@ footer .social-networks img {
     height: auto;
     filter: invert(100%);
     transition: transform 0.3s ease; 
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Prelomi elemente u kolonu na manjim ekranima */
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        flex-direction: column; /* Prelomi listu u kolonu */
+        width: 100%; /* Zauzmi punu širinu */
+    }
+
+    .navbar li {
+        width: 100%; /* Svaka stavka zauzima punu širinu */
+        text-align: center; /* Centriraj tekst */
+    }
+
+    .navbar .search-container {
+        margin: 10px 0; /* Doda malo razmaka između pretrage i navigacije */
+        width: 100%; /* Zauzmi punu širinu */
+    }
+
+    .navbar input[type="search"] {
+        width: 80%; /* Prilagodi širinu pretraživača */
+        margin: 0 auto; /* Centriraj */
+    }
+
+    footer .social-networks {
+        flex-direction: column; /* Prelomi društvene mreže u kolonu */
+    }
 }
