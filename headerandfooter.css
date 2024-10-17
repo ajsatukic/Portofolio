@@ -137,31 +137,31 @@ footer .social-networks img {
 
 @media (max-width: 768px) {
     .navbar {
-        flex-direction: column; /* Prelomi elemente u kolonu na manjim ekranima */
+        flex-direction: column; 
         align-items: flex-start;
     }
 
     .navbar ul {
-        flex-direction: column; /* Prelomi listu u kolonu */
-        width: 100%; /* Zauzmi punu širinu */
+        flex-direction: column; 
+        width: 100%; 
     }
 
     .navbar li {
-        width: 100%; /* Svaka stavka zauzima punu širinu */
-        text-align: center; /* Centriraj tekst */
+        width: 100%; 
+        text-align: center; 
     }
 
     .navbar .search-container {
-        margin: 10px 0; /* Doda malo razmaka između pretrage i navigacije */
-        width: 100%; /* Zauzmi punu širinu */
+        margin: 10px 0; 
+        width: 100%; 
     }
 
     .navbar input[type="search"] {
-        width: 80%; /* Prilagodi širinu pretraživača */
-        margin: 0 auto; /* Centriraj */
+        width: 80%; 
+        margin: 0 auto; 
     }
 
     footer .social-networks {
-        flex-direction: column; /* Prelomi društvene mreže u kolonu */
+        flex-direction: column; 
     }
 }
