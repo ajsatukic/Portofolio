@@ -7,11 +7,15 @@
     <link rel="icon" href="A.png">
     <link rel="stylesheet" href="style.css">
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     
-    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <h1>Welcome to my portofolio!</h1>
+    <h1 class="text-white">Welcome to my portofolio!</h1>
     <h2>Ajša Tukić</h2>
     <div class="navbar-homepage">
         <ul>
@@ -24,7 +28,9 @@
             <li class="search-container">
                 <form action="/search" method="GET">
                     <input type="search" placeholder="Search..." name="query">
-                    <button type="submit">Search</button>
+                    <button type="button" class="btn btn-default btn-sm">
+                        <span class="glyphicon glyphicon-search"></span> Search 
+                    </button>
                 </form>
             </li>
         </ul>
