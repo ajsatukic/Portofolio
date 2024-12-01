@@ -1,22 +1,39 @@
-
-.choose{
-    display: flex;
-    flex-direction: column;
+.choose {
+    display: grid;
+    grid-template-columns: auto auto auto; 
+    gap: 1rem; 
     justify-content: center;
     align-items: center;
-    background-color:#bffcfb;
+    padding: 1rem;
+    margin: 0;
+    padding: 0;
 }
 
-.img-container{
+.img-container {
+    border-radius: 10px;
+    padding: 10px;
     text-align: center;
-    margin: 0 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.choose img{
+.img-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #bffcfb;
+}
+
+.choose img {
     margin-top: 10px;
     width: 300px;
     height: 300px;
+    object-fit: cover;
 }
+
+.choose a {
+    text-decoration: none;
+    color: inherit;
+}
+
 
 figcaption{
     margin-top: 10px;
@@ -24,6 +41,8 @@ figcaption{
     margin-bottom: 10px;
     color: black;
 }
+
+
 .title{
     display: flex;
     flex-direction: column;
@@ -36,25 +55,45 @@ figcaption{
 }
 
 .article{
-    display: flex;
-    flex-direction: column;
+    display: grid; 
     justify-content: center;
-    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
     width: 100%;
-    margin: 0 auto;
-    background-color: #f9f9f9;
+    background-color: white;
+    padding: 20px;
 }
 
 .content-article{
-    margin-top: 10px;
-    width: 280px;
-    background-color: #f9f9f9;
+    border: 3px solid lightgrey;
     padding: 10px;
-    border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    height: fit-content;
+}
+
+.content-article h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.content-article li {
+    margin: 8px 0;
+}
+
+.content-article a {
+    text-decoration: none;
+    color: #00767c;
+}
+
+.content-article a:hover {
+    text-decoration: underline;
+    color: black;
 }
 
 .article-text{
+    grid-column: 2 / 4;
     max-width: 600px;
     text-align: left;
 }
@@ -90,8 +129,4 @@ table tr:hover {
     background-color: #f2f2f2;
 }
 
-@media (min-width: 768px) {
-    .choose {
-        flex-direction: row; 
-    }
-}
+
