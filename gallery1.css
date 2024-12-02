@@ -1,48 +1,62 @@
-/*Gallery 1*/
-.gallery1{
-    background-color: #f9f9f9;
-    width: 100%; 
-    padding-top: 40px;
-    padding-bottom: 40px;
+.gallery1 {
+    margin-top: 20px;
+    padding: 0 15px;
 }
-.conferences{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
-    gap: 15px;
-    margin-left: 50px;
-    margin-top: 15px;
-}
-.hover{
+
+.hover {
     position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
 }
 
-.conferences img{
-    width: 400px;
+.hover:hover {
+    transform: scale(1.05);
+}
+
+.hover img {
+    width: 100%;
     height: auto;
-    border-radius: 10px;
+    transition: transform 0.4s ease, filter 0.4s ease;
 }
 
-.overlay{
+.hover img:hover {
+    transform: scale(1.1);
+    filter: brightness(70%);
+}
+
+.overlay {
     position: absolute;
     top: 0;
-    bottom: 0;
     left: 0;
-    right: 0;
-    height: auto;
-    width: 400px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.1));
     opacity: 0;
-    transition: .5s ease;
-    background-color: #bffcfb;
+    transition: opacity 0.4s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.hover:hover .overlay{
+.hover:hover .overlay {
     opacity: 1;
-    border-radius: 10px;
 }
 
-.text{
+.text {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
     text-align: center;
-    font-size: 50px;
-    margin-top: 130px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.hover:hover .text {
+    opacity: 1;
+    transform: translateY(0);
 }
