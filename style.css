@@ -1,65 +1,56 @@
 body {
-    background-image: url('background.jpg'); 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
     height: 100vh;
-    width: 100vh;
-    padding: 20px;
-    font-family: serif; 
-    text-shadow: black 6px 0 10px;
+    background: url('background.jpg') no-repeat center center;
+    background-size: cover;
+    font-family: Garamond, serif;
+}
+.container-fluid{
+    margin-top: -100px;
+    padding-top: 0;
+}
+header {
+    color: #00767c;
+    font-style: italic;
+    text-align: center;
 }
 
-
-.navbar-homepage {
-    text-align: right;
-    margin-top: 200px; 
-    font-size: 18px;
+header .display-4 {
+    font-size: 70px; 
 }
 
-.navbar-homepage ul {
-    list-style-type: none; 
-    padding: 0; 
+header .lead {
+    font-size: 24px; 
 }
 
-.navbar-homepage li {
-    display: inline; 
-    margin: 0 15px; 
+.custom-navbar {
+    width: 160px; 
+    height: 160px;
+    padding: 10px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.navbar-homepage a {
-    color: white; 
+.custom-navbar .nav-link {
+    color: #00767c;
+    font-size: 15px; 
+    font-weight: bold;
     text-decoration: none;
+    padding: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
 }
 
-.navbar-homepage a:hover {
-    color:  #00767c;
-}
-
-.navbar-homepage .search-container {
-    display: inline-block;
-}
-
-.navbar-homepage input[type="search"] {
-    padding: 6px;
-    font-size: 16px;
-    border: none;
-    border-radius: 4px;
-    margin-left: 15px; 
-}
-
-.navbar-homepage button {
-    padding: 6px 10px;
-    background-color: #00767c;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    text-shadow: black 6px 0 10px;
-}
-
-.navbar-homepage button:hover {
+.custom-navbar .nav-link:hover {
     background-color: #bffcfb;
-    color: black;
+    color: #00767c;
 }
 
+.custom-navbar .nav-link:not(:last-child) {
+    margin-bottom: 5px;
+}

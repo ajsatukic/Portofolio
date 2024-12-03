@@ -17,14 +17,20 @@
 
     </head>
 <body style="background-color: #edf7f7;">
+    
     <header>
         <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="portofolio.html">
-                    <img src="" alt="Portfolio">
+            <div class="container-fluid align-items-center">
+                <a class="navbar-brand d-flex align-items-center" href="portofolio.html">
+                    <img src="image1.png" alt="Portfolio" class="brand-image">
                 </a>
+    
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item"><a class="nav-link" href="aboutme.html">About me</a></li>
                         <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
@@ -33,15 +39,12 @@
                         <li class="nav-item"><a class="nav-link" href="gallery2.html">Gallery 2</a></li>
                     </ul>
                 </div>
-                <form class="search-container">
-                    <div class="input-group">
-                        <input class="form-control" type="search" placeholder="Search..." name="query">
-                        <span class="input-group-btn">
-                            <button class="btn btn-default" type="submit">
-                                <span class="glyphicon glyphicon-search"></span>
-                            </button>
-                        </span>
-                    </div>
+    
+                <form class="d-flex search-container">
+                    <input class="form-control search-input" type="search" placeholder="Search..." name="query">
+                    <button class="btn search-button" type="submit" style="background-color: #00767c; color: white;">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
                 </form>
             </div>
         </nav>
@@ -144,28 +147,29 @@
     </div>
     
     
-    
-    <footer class=" text-center text-white">
-        <div class="container p-4 pb-0">
-            <section class="mb-4">
+    <footer>
+        <div class="footer-container">
+            <div class="social-networks">
                 <a href="https://www.linkedin.com/in/ajša-tukić-562964245" target="_blank">
-                    <img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" alt="LinkedIn" class="img-fluid">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" alt="LinkedIn">
                 </a>
                 <a href="https://www.instagram.com/ajsa.t77/?locale=bz-hans&hl=am-et" target="_blank">
-                    <img src="https://img.icons8.com/ios-filled/50/000000/instagram-new.png" alt="Instagram" class="img-fluid">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/instagram-new.png" alt="Instagram">
                 </a>
                 <a href="https://www.facebook.com/ajsa.tukic77/" target="_blank">
-                    <img src="https://img.icons8.com/ios-filled/50/000000/facebook-new.png" alt="Facebook" class="img-fluid">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/facebook-new.png" alt="Facebook">
                 </a>
-            </section>
-        </div>
-
-        <div class="text-center p-3">
-            <a href="#"><strong>Ajša Tukić</strong></a>
-            &copy; 2024
+            </div>
+    
+            <div class="footer-text">
+                <a href="#"><strong>Ajša Tukić</strong></a>
+            </div>
+    
+            <div class="footer-copyright">
+                &copy; 2024.
+            </div>
         </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
